@@ -1,0 +1,254 @@
+/* Responsive layout */
+/* */
+
+@media all and (min-width: 721px) {
+
+	.container {
+		width:61%;
+		margin: 0 auto;
+		padding: 10px;
+		
+	}	
+	#content .container-inner {
+		width: 100%;
+		display: table;
+		border-collapse: collapse;
+		border-spacing: 0;					
+	}
+	#content .container-inner #main {
+		width: 77%;			
+		height: 100%;
+		border: none;
+	
+		
+		display: table-cell;
+		border-collapse: collapse;	
+		border-spacing: 0;		
+		table-layout: fixed;
+	}
+	
+	#content .container-inner #sidebar {
+		
+		height: 100%;
+		border: none;
+	
+		border-collapse: collapse;	
+		border-spacing: 0;		
+		table-layout: fixed;
+	}
+	
+		#content .container-inner #sidebar .block {
+			padding: 5%;
+		}
+		
+		.block {
+			margin-top: 1em;
+		}
+		
+		.block:first-child {
+			margin-top: 0;
+		}								
+	
+	
+	#content .container-inner .table-gutter {
+		
+		display: table-cell;
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: 1%;
+	}	
+	#content .container-inner #sidebar .table-gutter {
+		
+		display: none;
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: 0%;
+	}
+} 
+
+@media all and (min-width: 481px) and (max-width: 720px) {
+
+	.container {
+		width:95%;
+		margin: 0 auto;
+		padding: 10px 1%;
+		
+	}	
+	
+	#top-nav ul.horizontal-menu {		
+		margin: 0px;	
+		padding: 0px;
+		float: none;
+	}	
+	
+	#top-nav ul.horizontal-menu li {
+		display: block;	
+		margin: .25em 0 0 0;
+	}	
+	
+	#top-nav ul.horizontal-menu li:first-child {
+		margin: 0px;
+	}	
+		
+	#content .container-inner {
+		width: 98%;
+		display: table;
+		border-collapse: collapse;
+		border-spacing: 0;				
+	}
+	#content .container-inner #main {
+		width: 100%;			
+		height: 100%;
+		border: none;
+	
+		display: table-row;
+		border-collapse: collapse;	
+		border-spacing: 0;		
+		table-layout: fixed;/**/
+	}
+	
+	#content .container-inner #sidebar {
+		
+		height: 100%;
+		border: none;
+		display: table-row;
+		border-collapse: collapse;	
+		border-spacing: 0;		
+		table-layout: fixed;
+	}
+	
+		#content .container-inner #sidebar .block {
+			padding: 5%;
+			display: table-cell;
+		}				
+	
+		#content .container-inner #sidebar .block{
+			margin-left: 10px;
+			
+		}
+		
+		#content .container-inner #sidebar .block:first-child{
+			margin-left: 0;
+		}
+		
+	#content .container-inner .table-gutter {
+		
+		display: none;
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: 0%;
+	}
+		
+
+	#content .container-inner #sidebar .table-gutter {
+		
+		display: table-cell;
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: 4.5%;
+	}	
+	
+		
+	
+	#content .container-inner  .content-inner{
+		width: auto;
+		height: 100%;
+		
+	}
+	
+	#main .content-inner {
+		padding: 1.4%;
+	}
+}
+
+
+@media all and  (max-width: 480px) {
+	.container {
+		width:95%;
+		margin: 0 auto;
+		padding: 10px 1%;
+		
+	}	
+	
+	#top-nav ul.horizontal-menu {		
+		margin: 0px;
+		padding: 0px;
+		float: none;
+	}	
+	
+	#top-nav ul.horizontal-menu li {
+		display: block;	
+		margin: .25em 0 0 0;	
+	}	
+	
+
+	#top-nav ul.horizontal-menu li:first-child {
+		margin: 0px;
+	}
+		
+	#content .container-inner {
+		width: 98%;
+		display: table;
+		border-collapse: collapse;
+		border-spacing: 0;				
+	}
+	
+	#content .container-inner #main {
+		width: 100%;			
+		height: 100%;
+		border: none;
+	
+		
+		display: table-row;
+		border-collapse: collapse;	
+		border-spacing: 0;		
+		table-layout: fixed;/**/
+	}
+	
+	#content .container-inner #sidebar {
+		
+		height: 100%;
+		border: none;
+		display: table-row;
+		border-collapse: collapse;	
+		border-spacing: 0;		
+		table-layout: fixed;
+	}
+	
+		#content .container-inner #sidebar .block {
+			padding: 5%;
+		}				
+	
+		.block {
+			margin-top: 1em;
+		}
+		
+		.block:first-child {
+			margin-top: 0;
+		}	
+	
+	#content .container-inner .table-gutter {
+		
+		display: none;
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: 0%;
+	}
+				
+	
+	#content .container-inner .content-inner{
+		width: auto;
+		height: 100%;
+		
+	}
+	
+	#main .content-inner {
+		padding: 1.4%;
+	}
+	
+	
+}
+
+#sidebar .content-inner {
+	padding: 4.8%;
+}	

@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  class="darkGrad">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Fluid Layout</title>
+		<link type="text/css" rel="stylesheet" href="css/main.css" />		
+		<link type="text/css" rel="stylesheet" href="css/layout.css" />		
+		<link type="text/css" rel="stylesheet" href="css/candy.css" />
+
+		<style type="text/css">
+			body {
+				font: 1em Georgia, Times, sans-serif;
+				width: 51.5%;
+				min-width: 480px;
+				/* margin: 0 auto; */
+					
+				background-color: #FCFFF5;
+
+			}
+			
+			
+			.nav {
+				padding: 5px 1.5%;
+				position: relative;
+			}	
+			
+			.nav ul.horizontalMenu {
+				margin: 0 auto;
+				width: 90%;
+			}	
+						
+			.nav ul li {
+				background-image: none;
+				border-right: 2px solid #222;
+				color: #ccc;
+				font-family:"Times New Roman", Times, serif;
+				letter-spacing: .2em;
+				font-style: italic;
+				font-weight: bold;
+				height: 32px;
+				padding-left: 1%;
+				padding-right: 1%;				
+				
+			}
+			
+			.nav a {
+				color: #ccc;
+				text-decoration: none;
+				display: block;
+				height: 100%;
+				width: auto;
+				padding: 0px 25px 0px 49px;
+				line-height: 32px;				
+				opacity: .75;
+			}
+			
+			
+			/* content */
+			#wrapper {
+				margin-left: 1%;
+				margin-right: 1%;
+				padding-top: 0px;
+				padding-bottom:150px; 
+				height: 100%;
+			}
+									
+			
+			.grid-container-960 {
+				width: 98%;
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			.grid-3-16 {
+				width: 16.7%;
+				margin: 0px 1.0%;
+			}
+			
+			.grid-4-16 {
+				width: 22.9%;  /* 1/4 */
+				margin: 0px 1.0%;
+			}			
+					
+			.grid-9-16 {
+				width: 54.2%;
+				margin: 0px 1.0%;
+			}	
+					
+			.divider {
+				margin-right: 0px;
+				padding-right: .93%;
+				border-right: 1px solid #D1DBBD;
+			}	
+			
+			.divider+.divider {
+				margin-left: 0px;
+				padding-left: 1%;
+			}
+			
+			.divider.last-col {
+				padding-right: 0px;
+				border: none;
+				margin-right: 1%;
+			}
+			
+			.asideContent {
+				font-family: Arial, Helvetica, sans-serif;
+				padding: 10px 3%;
+				font-size: 1em;
+			}			
+			.aside h3 {
+				height: auto;
+				min-height: 1.2em;
+				
+			}
+
+			#footer {
+				position:absolute;
+   				bottom:0;
+				height: 120px;
+				width: 97.8%;
+				padding: 10px 1%;
+				clear: both;
+				
+				background-color: #193441;
+				color: #D1DBBD;	
+				border-left: 1px solid #3E606F;
+				border-right: 1px solid #3E606F;							
+			}
+			
+		</style>
+	</head>
+	<body class="center shadow-innerThickDarkShadow">
+		<div id="container">
+			<div id="header" class="greenGrad">
+				<div id="head-container">
+					<div id="logo"><a href="index.html" title="HMTL Layout">&nbsp;</a></div>					
+					<div id="search">
+						<form id="search-form"  action="" method="post">
+							<input id="search-input-text" type="search" name="query" placeholder="Search" />
+		    				<input id="search-input-submit" type="submit" value="" />
+						</form>
+					</div>	
+				</div>
+			</div>
+			<div class="nav darkGrad shadow-outerBlueish clearfix">
+				<ul class="horizontalMenu center clearfix">
+					<li><a  class="nav-sprite blue-35"href="#" title="About Us">About</a></li>
+					<li><a class="nav-sprite blue-31" href="#" title="Services">Services</a></li>
+					<li><a class="nav-sprite blue-06" href="#" title="Events">Events</a></li>
+					<li><a class="nav-sprite blue-17" href="#" title="Contact Us">Contact</a></li>
+					<li><a class="nav-sprite blue-12" href="#" title="Reviews">Reviews</a></li>
+				</ul>
+			</div>		
+			<div id="wrapper" class="grid-container-960">
+		
+				<div class="grid-3-16 first-col">
+					<div id="leftMenu" class="silverGradReverse">
+						<h3 class="darkGrad">Topics</h3>
+						<ul>
+							<li class="silverGrad"><a href="#">Home</a></li>
+							<li class="silverGrad"><a href="fixed-layout.html">Fixed Layout</a></li>
+							<li class="silverGrad"><a href="fluid-layout.html">Fluid Layout</a></li>
+							<li class="silverGrad"><a href="responsive-layout.html">Responsive Layout</a>
+							<!-- <li class="silverGrad"><a href="#">Item 4</a></li>-->
+						</ul>
+					</div>
+				</div>
+				
+				<div class="grid-9-16 divider shadow-innerThinLight">
+					<div id="mainContent">
+						<h1>Fluid Layout</h1>
+						<div class="graphicGroup floatLeft" style="width: 57%;">
+							<div class="graphic border-white5 shadow-outerImage">
+								<img class="" src="images/freeform-i_460.jpg" width="100%" alt="artwork" title="Artwork" />
+							</div>
+							<div class="caption">Some caption goes here...</div>
+						</div>	       
+						<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#" title="Donec non enim">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. 
+							Mauris placerat eleifend leo.</p>
+					</div>
+						
+				</div>
+					
+					
+					<div class="grid-4-16 divider last-col clearfix">
+						<div class="aside silverGradReverse">
+							<h3 class="greenGrad">Related Content</h3>
+							<div class="asideContent">
+								<div class="graphicGroup">
+									<div class="graphic border-white5"><img src="images/afterburner-ii_220x132.jpg"  alt="sample image 1" /></div>
+									<div class="caption">A beautiful photo would go here...</div>
+								</div>
+								<p>	Blab blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...</p>
+							
+								<div class="graphicGroup">
+									<div class="graphic border-white5"><img src="images/mandarin-i_220.jpg"  alt="sample image 1" /></div>
+									<div class="caption">A beautiful photo would go here...</div>
+								</div>
+								<p>	Blab blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...</p>
+	
+							</div>
+							
+							
+						</div>
+					</div>
+					<div class="clearfix"></div>
+									
+			</div>
+			<div id="footer" class="greenGradReverse">
+				<div id="footerNav">
+					<ul class="horizontalMenu center clearfix">
+						<li><a  class=""href="#" title="About Us">About</a></li>
+						<li><a class="" href="#" title="Services">Services</a></li>
+						<li><a class="" href="#" title="Events">Events</a></li>
+						<li><a class="" href="#" title="Contact Us">Contact</a></li>
+						<li><a class="" href="#" title="Reviews">Reviews</a></li>
+					</ul>
+				</div>
+				<div id="copyright">
+					Copyright © 2012, <a href="http://www.ssmith1975.com">www.ssmith1975.com</a> - All rights reserved.
+				</div>				
+			</div>
+		</div>
+	</body>
+</html>
+

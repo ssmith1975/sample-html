@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/**
+ * 	Color Gude
+ * Cloudless Day - 		#6ACFE1
+ * Saffron - 			#FA311D
+ * Egg Yolk - 			#EEF448
+ * Green -				#A6D817
+ * Cornucopia -			#ED0735
+ */
+
+/* Reset */
+html, body, div, p, ul, ol, li, strong, em, h1, h2, h3, blockquote, pre, code,
+strong,  em, blockquote, pre {
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;	
+}
+
+img {
+	border: none;
+}
+
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+/* Elements */
+html, body{
+	
+	height: 100%;
+	/*margin-bottom: -100px;*/
+}
+
+body {
+	font: 1em Garamond, "Times New Roman", "Times", serif;
+	position: relative;
+	background-color: #6ACFE1;
+	
+	width: 100%;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-family: Garamond, "Times New Roman", "Times", serif;
+	color: #fff;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #444;
+	padding-bottom: .94em;
+}
+
+h3 {
+	font-size: 1.4em;
+	margin-bottom: 1.07em;
+}
+
+a {
+	color: #FA311D;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FA311D;
+}
+p {
+	font-size: 1em;
+	/* font-family: Arial, Helvetica, sans-serif;*/
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+
+/* Structure */
+#wrapper {
+	width: 100%;
+	
+	min-height:100%;
+	/*height: auto !important;*/
+	height: 100%;
+	position: relative;
+	
+	/*overflow: hidden;*/
+}
+
+div.container {
+	width: 960px;
+	margin: 0px auto;
+	/*overflow: hidden;*/
+}
+
+
+#header {
+	height: 100px;
+	/*width: 100%;*/
+	border-bottom: 4px solid #EEF448;
+	padding: 0px ;
+	background-color: #FA311D; 
+	
+}
+
+#header .container {
+	background: transparent url('../images/logo-4.png') no-repeat 0px 0px;
+	
+}
+
+#header h1 {
+	margin-left: 120px;
+	line-height: 100px;
+}
+
+
+#content {
+	/*height:100%;*/
+	min-height: 100%;
+	width:960px;
+	margin: 0 auto;
+	
+	/*overflow:hidden;*/
+	
+	position: relative;
+	padding: 0px 0px 100px;
+	background-color: #eee;
+}
+
+#content:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#content .container {
+	display: block;
+	/*padding: 0px 20px 20px 20px;*/
+	height: 100%;
+	
+	/*padding-bottom: 100px;*/	
+	
+}
+
+
+#content #main-container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	padding-bottom: 100px;
+	margin-bottom: -100px;
+	display: table-cell;
+}
+
+	#content #main-col {
+		/*padding: 19px;*/
+		padding: 0 0 0 220px;
+		/*margin-left: 20px;
+		fborder: 1px solid #333;
+		border-radius: 5px;	
+		
+		loat: left;
+		width: 680px;
+		margin-top: 40px;*/	
+	}
+
+
+
+#content #sidebar {
+	float: left;
+	width: 200px;
+	margin-left: -100%;
+	position: relative;	
+	display: table-cell;
+	/* height:100%;
+	min-height: 100%;
+	margin-top: 40px;
+	*/
+
+	
+}
+
+	#content #sidebar h3 {
+		background-color: #6ACFE1;
+		color: #fff;
+		padding: 5px 20px;
+		height: 25px;
+		
+		
+	}
+	
+	#content #sidebar #sidebar-ribbon {
+		position: absolute;
+		top: 0px;
+		left: -25px;
+		z-index: -1;
+	}
+	
+	#content #sidebar .menu {
+		margin-left: 0px;
+		list-style: none;
+	}
+	
+		#content #sidebar .menu li {
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #aaa;
+			padding: 4px 20px 4px 75px;
+			height: 64px;
+			line-height: 64px;
+			background: transparent url('../images/nav-sprite-gray.png') no-repeat 0px 0px;
+		}
+		
+		#content #sidebar .menu li:first-child {
+			border-top: none;
+		}
+		
+		#content #sidebar .menu li:last-child {
+			border-bottom: none;
+		}
+		
+		
+		
+		
+		#content #sidebar .menu a {
+			font-family: "Century Gothic", Arial, Helvetica, sans-serif;	
+			font-size: .8em;
+			color: #888;
+		}
+
+
+
+.clearfix:before,
+.clearfix:after {
+ 	content: " ";	
+ 	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+	
+	
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+	*zoom: 1;
+	clear: both;
+}
+/*
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	
+}
+*/
+
+#footer {
+	background-color: #333;
+	color: #CCCCCC;
+	/*position: relative;
+	bottom: 0px;
+	left: 0px;
+	margin-top: -98px;
+	 */
+	
+	height: 100px;
+	width: 100%;
+	border-top: 2px solid #ED0735;
+	margin: 100px auto 0px;
+	position: relative;
+	
+	
+}
+
+#footer .container {
+	padding: 20px;	
+}
