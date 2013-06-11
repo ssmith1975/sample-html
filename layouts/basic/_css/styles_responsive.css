@@ -5,6 +5,7 @@
 
 	.container {
 		width:61%;
+		min-width: 721px;
 		margin: 0 auto;
 		padding: 10px;
 		
@@ -64,8 +65,10 @@
 		border-spacing: 0;
 		width: 0%;
 	}
-} 
+	
 
+} 
+/* Tablet */
 @media all and (min-width: 481px) and (max-width: 720px) {
 
 	.container {
@@ -74,22 +77,50 @@
 		padding: 10px 1%;
 		
 	}	
+#header {
+	height: 150px;
 	
-	#top-nav ul.horizontal-menu {		
-		margin: 0px;	
-		padding: 0px;
-		float: none;
-	}	
+}	
+#header #logo {
+	height: 100px;
+width: 100%;
+max-width: 315px;
+float: none;
 	
-	#top-nav ul.horizontal-menu li {
+}	
+#header #search {
+height: 50px;
+width: 100%;
+float: none;
+margin-top: 0px;
+}	
+
+#search-form {
+	float: none;
+		margin: 0 auto;
+}
+
+
+	#top-nav ul li {
+		border: none;
 		display: block;	
-		margin: .25em 0 0 0;
-	}	
-	
-	#top-nav ul.horizontal-menu li:first-child {
+		border-right: none;
+		border-bottom: 1px solid #444;
+		padding-top: 5px;
+		padding-bottom: 5px;		
+	}
+	#top-nav ul li:hover {
+		background-color: #193441;
+	}			
+	#top-nav ul li:first-child {
 		margin: 0px;
-	}	
+		border-left: none;
+	}
+	
+	#top-nav ul li:last-child {
+		border: none;
 		
+	}	
 	#content .container-inner {
 		width: 98%;
 		display: table;
@@ -159,9 +190,13 @@
 	#main .content-inner {
 		padding: 1.4%;
 	}
+	
+	#mainImage {
+		width: 57%;
+	}		
 }
 
-
+/* Handheld */
 @media all and  (max-width: 480px) {
 	.container {
 		width:95%;
@@ -169,23 +204,70 @@
 		padding: 10px 1%;
 		
 	}	
+
+#header {
+	height: 150px;
 	
+}	
+#header #logo {
+	height: 100px;
+width: 100%;
+max-width: 315px;
+float: none;
+	
+}	
+#header #search {
+height: 50px;
+width: 100%;
+float: none;
+margin-top: 0px;
+}	
+
+#search-form {
+	float: none;
+		margin: 0 auto;
+}
+
+	#top-nav {
+		padding: 0px;
+		
+	}
 	#top-nav ul.horizontal-menu {		
 		margin: 0px;
 		padding: 0px;
 		float: none;
 	}	
-	
+/*
 	#top-nav ul.horizontal-menu li {
 		display: block;	
 		margin: .25em 0 0 0;	
+		border: none;
+		width: 100%;
 	}	
 	
-
-	#top-nav ul.horizontal-menu li:first-child {
-		margin: 0px;
+*/
+	#top-nav ul li {
+		border: none;
+		display: block;	
+		border-right: none;
+		border-bottom: 1px solid #444;
+		padding-top: 5px;
+		padding-bottom: 5px;		
 	}
 		
+	#top-nav ul li:first-child {
+		margin: 0px;
+		border-left: none;
+	}
+	
+	#top-nav ul li:last-child {
+		border: none;
+		
+	}	
+	#top-nav ul li:hover {
+		background-color: #193441;
+		
+	}
 	#content .container-inner {
 		width: 98%;
 		display: table;
@@ -245,8 +327,13 @@
 	#main .content-inner {
 		padding: 1.4%;
 	}
-	
-	
+	#mainImage {
+		width: 100%;
+	}	
+	.graphicGroup.floatLeft, .graphicGroup.floatRight {
+		float: none;
+		width: 100%;
+	}
 }
 
 #sidebar .content-inner {

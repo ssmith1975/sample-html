@@ -3,10 +3,19 @@
 
 .container {
 	width:61%;
+	min-width: 720px;
 	margin: 0 auto;
 	padding: 10px;
 	
 }	
+/*
+#top-nav ul.horizontalMenu {
+	width: 100%;
+}
+*/
+#top-nav  a {
+	/*padding: 0px 5% 0px 34% !important;*/
+}
 #content .container-inner {
 	width: 100%;
 	display: table;

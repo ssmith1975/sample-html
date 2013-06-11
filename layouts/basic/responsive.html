@@ -3,11 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<title>Basic Layout: Responsive</title>
 		<link rel="stylesheet" type="text/css" href="_css/styles.css" />
 		<link rel="stylesheet" type="text/css" href="_css/sticky_footer.css" />
 		<link rel="stylesheet" type="text/css" href="_css/styles_responsive.css" />
+		<link type="text/css" rel="stylesheet" href="_css/candy.css" />
 		<style type="text/css">
 
 		</style>
@@ -20,46 +21,72 @@
 
 	<body>
 	 	<!-- Wrapper -->
-	    <div id="wrapper">
+	    <div id="wrapper" class="darkGrad">
 	    	<!-- Header -->	
-	    	<div id="header" class="clear">
-				<div class="container">
-					<h1>Basic Layout: Responsive</h1>
-	    		</div> 
+	    	<div id="header" class="greenGrad clearfix">
+	    		<div class="container">
+					<div id="head-container">
+						<div id="logo"><a href="index.html" title="HMTL Layout">&nbsp;</a></div>
+						<div id="search">
+							<form id="search-form"  action="" method="post">
+								<input id="search-input-text" type="search" name="query" placeholder="Search" />
+			    				<input id="search-input-submit" type="submit" value="" />
+							</form>
+						</div>	
+					</div>
+				</div>
 	    	</div>	
+	    	
+	    	<!-- Navigation -->	
+			<div id="top-nav" class="nav darkGrad shadow-outerBlueish clearfix">
+				<div class="container nav">
+					<ul class="horizontalMenu center clearfix">
+						<li><a  class="nav-sprite blue-35"href="#" title="About Us">About</a></li>
+						<li><a class="nav-sprite blue-31" href="#" title="Services">Services</a></li>
+						<li><a class="nav-sprite blue-06" href="#" title="Events">Events</a></li>
+						<li><a class="nav-sprite blue-17" href="#" title="Contact Us">Contact</a></li>
+						<li><a class="nav-sprite blue-12" href="#" title="Reviews">Reviews</a></li>
+					</ul>
+				</div>	
+			</div>		    	
 	    	<!-- Content -->    
 	        <div id="content">
-	        	<div class="container">
-		    		<div id="top-nav" class="clearfix">
-		    			<ul class="horizontal-menu">
-		    				<li><a href="#">Layouts</a></li>	    				
-		    				<li><a href="fixed.html">Fixed</a></li>	    				
-		    				<li><a href="fluid.html">Fluid</a></li>	    				
-		    				<li><a href="responsive.html">Responsive</a></li>	    				
-		    			</ul>
-		    		</div>
-		    		<div class="clear"></div>	        		
-	        		
+	        	<div class="container shadow-innerThickDarkShadow ">
+
 	        		<div class="container-inner clearfix">
 		        		<div id="main">
 		        			<div class="content-inner">
 		        				
-									<h2>Main Column</h2>
-									<p><strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue.</p>
-									<p> Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.</p>					
+								<h2>Responsive Layout</h2>
+								<div id="mainImage" class="graphicGroup floatLeft">
+									<div class="graphic border-white5 shadow-outerImage">
+										<img class="" src="_images/freeform-i_460.jpg" width="100%" alt="artwork" title="Artwork">
+									</div>
+									<div class="caption">Some caption goes here...</div>
+								</div>									
+								<p><strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue.</p>
+								<p> Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.</p>					
 							</div>
 	        			</div>
-	        			<div class="table-gutter"></div>
+	        			<div class="table-gutter shadow-innerThinLight"></div>
 		        		<div id="sidebar">
 		        			
 		        			<div class="content-inner">
-		        				<h2>Side bar</h2>
-		        				<div class="block">	
+		        				<h2 class="greenGrad border-rounded-plain">Side bar</h2>
+		        				<div id="side-nav">
+					    			<ul class="nav">
+					    				<li><a href="index.html">Home</a></li>		    				
+					    				<li><a href="fixed.html">Fixed Layout</a></li>	    				
+					    				<li><a href="fluid.html">Fluid Layout</a></li>	    				
+					    				<li>» <em>Responsive Layout</em></li>	    				
+					    			</ul>		        					
+		        				</div>
+		        				<div class="block border-rounded-plain">	
 		        					<h3>Block 1</h3>
 		        					<p>Conventio augue gilvus wisi ea usitas velit. Fatua, ullamcorper neque appellatio nullus ad eu tation ex commoveo, diam iusto nutus melior. Blandit quod luptatum ut duis natu tincidunt exerci wisi lucidus consequat.</p>
 		        				</div>	
 		        				<div class="table-gutter"></div>
-		        				<div class="block">	
+		        				<div class="block border-rounded-plain">	
 		        					<h3>Block 2</h3>
 		        					<p>Conventio augue gilvus wisi ea usitas velit. Fatua, ullamcorper neque appellatio nullus ad eu tation ex commoveo, diam iusto nutus melior. Blandit quod luptatum ut duis natu tincidunt exerci wisi lucidus consequat.</p>
 		        				</div>		
@@ -70,7 +97,7 @@
 	        	</div>		
 	        </div>	 
 	        
-	        <!-- <div class="push"></div>-->
+	        
          
 	    </div>
 	    
